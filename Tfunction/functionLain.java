@@ -14,12 +14,13 @@ class hitungLuas {
 }
 public class functionLain {
     public static void main(String[] args) {
-        hitungLuas hl = new hitungLuas();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Menu-menu\n 1. Hitung Luas Trapesium \n 2. Hitung Luas Jajar Genjang");
+        try (Scanner input = new Scanner(System.in);){
+
+            hitungLuas hl = new hitungLuas();
+            System.out.println("Menu-menu\n 1. Hitung Luas Trapesium \n 2. Hitung Luas Jajar Genjang");
         System.out.print("Masukkan Pilihan 1..2 :");
         int pilihan = input.nextInt();
-
+        
         switch(pilihan){
             case 1 :
             System.out.print("Masukkan panjang a : ");
@@ -39,6 +40,7 @@ public class functionLain {
             break;
             default :
             System.out.println("Bukan Termasuk Pilihan");
+        }
         }
     }
 }
