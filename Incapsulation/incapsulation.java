@@ -77,6 +77,7 @@ public class incapsulation {
                     break;
             
                 default:
+                System.out.println("masukkan anda salah");
                     break;
             }
 
